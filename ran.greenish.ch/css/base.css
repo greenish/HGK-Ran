@@ -1,0 +1,51 @@
+body {
+	margin:0px;
+	padding:0px;
+	min-width:550px;
+	font-family: arial;
+	color:#000000;
+}
+a:visited,
+a:focus,
+a {
+	color:#000000;
+	text-decoration:none;
+}
+a:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection{ background: #ccc; color:#fff; text-shadow: none; }
+::selection { background:#ccc; color:#fff; text-shadow: none; }
+
+
+
+
+h1 {
+	text-transform:uppercase;
+	text-align:center;
+	color:#000000;
+	margin-bottom:42px;
+}
+h2 {
+	text-transform:uppercase;
+	
+}
+h3 {
+	text-transform:uppercase;
+	text-align:center;
+	color:#000000;	
+	margin-top:25px;
+}
+
+hr {
+	border:0px;
+	height:4px;
+	background-color:#000000;
+	margin:0px;
+	padding:0px;
+}

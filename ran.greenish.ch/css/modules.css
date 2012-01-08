@@ -1,0 +1,63 @@
+/*.navigation extends .mod*/
+
+.navigation .inner {
+	position:absolute;
+	right:0px;
+	width:196px;
+	height:100%;
+	overflow:hidden;
+	border-right:4px solid #000000;
+}
+
+.navigation .bd {
+	position:static;
+	padding:20px;
+	overflow:hidden;
+	width:160px;
+}
+.header {
+	position:relative;
+	top:0px;
+	left:0px;
+	display:block;
+	width:160px;
+	height:200px;
+}
+
+.ran {
+	position:relative;
+	margin:33px;
+}
+
+.links {
+	margin:0px;
+	padding:0px;
+	width:160px;
+	
+}
+
+.links li {
+	margin:3px 0px;
+	text-align:center;
+}
+
+.links a {
+	font-size:85%;
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+.info {
+	position:absolute;
+	bottom:0px;
+	width:160px;
+	text-align:center;
+	border-top:4px solid #000000;
+	background:transparent;
+	background-color:#ffffff;
+	color:#000000;
+	font-size:85%;
+	padding:10px 0px 20px 0px;
+	line-height:15px;
+}
