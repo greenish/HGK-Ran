@@ -37,7 +37,7 @@
 				<div class="bd">
 					<a href="/" class="header">
 						<img src="img/ran.jpg" class="ran">
-						<h1>RAN /<br>Chaos</h1>
+						<h1>RAN<br><span>Chaos</span></h1>
 					</a>
 					<hr>
 					<ul class="links">

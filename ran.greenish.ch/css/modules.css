@@ -1,4 +1,26 @@
 /*.navigation extends .mod*/
+.description .inner {
+	position:absolute;
+	left:0px;
+	width:296px;
+	height:100%;
+	overflow:auto;
+	border-left:4px solid #000000;
+}
+
+.description .bd {
+	position:relative;
+	padding:176px 10px 20px 20px;
+	overflow:hidden;
+	width:250px;
+	text-align:left;
+}
+
+
+
+
+
+/*.navigation extends .mod*/
 
 .navigation .inner {
 	position:absolute;
@@ -21,12 +43,17 @@
 	left:0px;
 	display:block;
 	width:160px;
-	height:200px;
+	height:170px;
+	text-decoration:none !important;
+}
+.header h1 span {
+	font-size:77%;
+	font-weight:normal;
 }
 
 .ran {
 	position:relative;
-	margin:33px;
+	margin:20px 33px 25px 33px;
 }
 
 .links {
@@ -58,6 +85,6 @@
 	background-color:#ffffff;
 	color:#000000;
 	font-size:85%;
-	padding:10px 0px 20px 0px;
-	line-height:15px;
+	padding:5px 0px 10px 0px;
+	line-height:16px;
 }

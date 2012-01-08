@@ -4,7 +4,11 @@
  * These follow after, and will override, the primary ('mobile first') styles
  * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
  */
-@media only screen and (max-width: 962px) {
+@media only screen and (max-height: 614px) {
+	.info {
+		height:9px;
+	}
+
 }/*/mediaquery*/
 
 @media only screen and (max-width: 573px) {	
