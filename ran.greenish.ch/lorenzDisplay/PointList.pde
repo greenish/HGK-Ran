@@ -13,10 +13,9 @@ class PointList {
 		listPoint= new ListPoint[lorenzFormula.points.length];
 	}
 ///////////////////////////////////////////////////////////
-	
-	
 	void draw(){
 		pushMatrix();
+			translate(0,-10);
 			moveList();
 			for(int i=startValue; startValue+110 > i && i<lorenzFormula.points.length; i++) {
 					
@@ -43,7 +42,9 @@ class ListPoint {
 	float[] thisPoint;
 	float	x,y,
 			w=400,
-			h=14;	
+			h=14,	
+			dx=0,
+			dy=-10;
 
 	
 	
@@ -58,7 +59,7 @@ class ListPoint {
 ///////////////////////////////////////////////////////////
 	void drawPoint (){
 		
-		if(mouseX > x && mouseX < x+w && mouseY>y && mouseY < y+h ) {
+		if(mouseX > x+dx && mouseX < x+w+dx && mouseY>y+dy && mouseY < y+h+dy ) {
 			highlight();
 			return;
 		}

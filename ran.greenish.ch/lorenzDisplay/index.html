@@ -4,7 +4,7 @@
     <!-- charset must remain utf-8 to be handled properly by Processing -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <title>lorenzDisplay : Built with Processing</title>
+    <title>lorenzDisplayWEB : Built with Processing</title>
 
     <style type="text/css">
       /* <![CDATA[ */
@@ -31,7 +31,7 @@
 
   <body>
     <div id="content">
-      <div id="lorenzDisplay_container">
+      <div id="lorenzDisplayWEB_container">
 
 	<!-- This version plays nicer with older browsers, 
 	     but requires JavaScript to be enabled. 
@@ -43,8 +43,8 @@
 	  /* <![CDATA[ */
 
 	  var attributes = { 
-            code: 'lorenzDisplay.class',
-            archive: 'lorenzDisplay.jar,fullscreen.jar,core.jar',
+            code: 'lorenzDisplayWEB.class',
+            archive: 'lorenzDisplayWEB.jar',
             width: 1680, 
             height: 1050,
           };
@@ -60,13 +60,13 @@
         
 	<noscript> <div>
 	  <!--[if !IE]> -->
-	  <object classid="java:lorenzDisplay.class" 
+	  <object classid="java:lorenzDisplayWEB.class" 
             	  type="application/x-java-applet"
-            	  archive="lorenzDisplay.jar,fullscreen.jar,core.jar"
+            	  archive="lorenzDisplayWEB.jar"
             	  width="1680" height="1050"
             	  standby="Loading Processing software..." >
             
-	    <param name="archive" value="lorenzDisplay.jar,fullscreen.jar,core.jar" />
+	    <param name="archive" value="lorenzDisplayWEB.jar" />
 	    
 	    <param name="mayscript" value="true" />
 	    <param name="scriptable" value="true" />
@@ -85,8 +85,8 @@
 		    width="1680" height="1050"
 		    standby="Loading Processing software..."  >
 	      
-	      <param name="code" value="lorenzDisplay" />
-	      <param name="archive" value="lorenzDisplay.jar,fullscreen.jar,core.jar" />
+	      <param name="code" value="lorenzDisplayWEB" />
+	      <param name="archive" value="lorenzDisplayWEB.jar" />
 	      
 	      <param name="mayscript" value="true" />
 	      <param name="scriptable" value="true" />
@@ -120,7 +120,7 @@
       </p>
       
       <p>
-	Source code: <a href="lorenzDisplay.pde">lorenzDisplay</a> <a href="PointList.pde">PointList</a> <a href="eventListener.pde">eventListener</a> <a href="lorenzFormula.pde">lorenzFormula</a> <a href="lorenzVisual.pde">lorenzVisual</a> 
+	Source code: <a href="lorenzDisplayWEB.pde">lorenzDisplayWEB</a> <a href="PointList.pde">PointList</a> <a href="eventListener.pde">eventListener</a> <a href="lorenzFormula.pde">lorenzFormula</a> <a href="lorenzVisual.pde">lorenzVisual</a> 
       </p>
       
       <p>

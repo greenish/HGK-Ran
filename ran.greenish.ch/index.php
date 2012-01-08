@@ -51,7 +51,7 @@
 						<li><a href="/?p=pcaCollisionDetection">pcaCollisionDetection</a></li>
 						<li><h3>Source on Github</h3></li>
 						<li><a href="https://github.com/greenish/HGK-Ran" target="_blank">HGK-Ran</a></li>
-						<li><a href="#" target="_blank">pcaCollisionDetection</a></li>
+						<li><a href="https://github.com/greenish/pcaCollisionDetection" target="_blank">pcaCollisionDetection</a></li>
 						<li><h3>TImeline on GitHub</h3></li>
 						<li><a href="https://github.com/greenish/HGK-Ran/commits/master" target="_blank">HGK-Ran</a></li>
 					</ul>

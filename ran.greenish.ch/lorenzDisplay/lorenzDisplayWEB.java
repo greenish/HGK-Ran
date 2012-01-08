@@ -1,9 +1,6 @@
 import processing.core.*; 
 import processing.xml.*; 
 
-import fullscreen.*; 
-import japplemenubar.*; 
-
 import java.applet.*; 
 import java.awt.Dimension; 
 import java.awt.Frame; 
@@ -18,37 +15,32 @@ import java.util.*;
 import java.util.zip.*; 
 import java.util.regex.*; 
 
-public class lorenzDisplay extends PApplet {
-
-
-
+public class lorenzDisplayWEB extends PApplet {
 
 LorenzFormula lorenzFormula;
 LorenzVisual lorenzVisual;
-FullScreen fullScreen;
 PointList pointList;
 EventListener eventListener;
 
-PFont 	frutigerRoman24,
-		frutigerRoman16,
-		monaco9;
-PImage blueLight;
+public PFont 	frutigerRoman24,
+				frutigerRoman16,
+				monaco9;
+public PImage 	blueLight;
 
 
 public void setup(){
 	size(1680, 1050, P3D); 
 //	size(900, 1000, P3D); 
 	//smooth();
+	frameRate(10);
 	frutigerRoman24 = loadFont("FrutigerCE-Roman-24.vlw");
 	frutigerRoman16 = loadFont("FrutigerCE-Roman-16.vlw");
 	monaco9 = loadFont("Monaco-12.vlw");
 	
 	
-	blueLight = loadImage("images/Lorenz84AbstractorDesign.png");
+	blueLight = loadImage("Lorenz84AbstractorDesign.png");
 	background(blueLight);
 
-	fullScreen = new FullScreen(this); 
-	fullScreen.setShortcutsEnabled(true);
 	lorenzFormula = new LorenzFormula();
 	lorenzVisual = new LorenzVisual(lorenzFormula);
 	pointList = new PointList(lorenzFormula, lorenzVisual);
@@ -56,16 +48,11 @@ public void setup(){
 
 
 
-	
-	//fullScreen.enter(); 
-
-
 }
 
 ///////////////////////////////////////////////////////////
 public void draw(){
 	background(blueLight);
-	
 	if(!lorenzFormula.paused) lorenzFormula.animation();
 	lorenzFormula.formulaEventListener();
 	lorenzFormula.generatePoints();
@@ -96,10 +83,9 @@ class PointList {
 		listPoint= new ListPoint[lorenzFormula.points.length];
 	}
 ///////////////////////////////////////////////////////////
-	
-	
 	public void draw(){
 		pushMatrix();
+			translate(0,-10);
 			moveList();
 			for(int i=startValue; startValue+110 > i && i<lorenzFormula.points.length; i++) {
 					
@@ -126,7 +112,9 @@ class ListPoint {
 	float[] thisPoint;
 	float	x,y,
 			w=400,
-			h=14;	
+			h=14,	
+			dx=0,
+			dy=-10;
 
 	
 	
@@ -141,7 +129,7 @@ class ListPoint {
 ///////////////////////////////////////////////////////////
 	public void drawPoint (){
 		
-		if(mouseX > x && mouseX < x+w && mouseY>y && mouseY < y+h ) {
+		if(mouseX > x+dx && mouseX < x+w+dx && mouseY>y+dy && mouseY < y+h+dy ) {
 			highlight();
 			return;
 		}
@@ -564,6 +552,6 @@ class LorenzVisual {
 	
 }
   static public void main(String args[]) {
-    PApplet.main(new String[] { "--bgcolor=#FFFFFF", "lorenzDisplay" });
+    PApplet.main(new String[] { "--bgcolor=#FFFFFF", "lorenzDisplayWEB" });
   }
 }
