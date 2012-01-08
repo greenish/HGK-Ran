@@ -36,7 +36,7 @@ Data data= new Data();
 
 
 float		zoom =0.8;
-PVector 		shift=new PVector(-100+170,100);
+PVector 		shift=new PVector(170,100);
 ///////////////////////////////////////////////////////////
 void setup() {
 	that = this;
@@ -46,7 +46,7 @@ void setup() {
 	stroke(0);
 	noFill();
 	frameRate(9);
-	ran=new ElementBlob(this, new PVector(-100+1680/2, 1050/2), 200);
+	ran=new ElementBlob(this, new PVector(1680/2, 1050/2), 200);
 	
 	data.load("ranPoints.txt");
 //	Create Elements
