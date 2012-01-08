@@ -4,7 +4,7 @@ pcaRanWEBjs								that;
 ///////////
 //int 								elementCount = 6000;
 //int 								depth = 10;
-int 								elementCount =300;
+int 								elementCount =400;
 int 								depth = 1;
 //int 								elementCount = 5500;
 //int 								depth = 5;
@@ -36,7 +36,7 @@ Data data= new Data();
 
 
 float		zoom =0.8;
-PVector 		shift=new PVector(170,100);
+PVector 		shift=new PVector(-100+170,100);
 ///////////////////////////////////////////////////////////
 void setup() {
 	that = this;
@@ -46,7 +46,7 @@ void setup() {
 	stroke(0);
 	noFill();
 	frameRate(9);
-	ran=new ElementBlob(this, new PVector(1680/2, 1050/2), 200);
+	ran=new ElementBlob(this, new PVector(-100+1680/2, 1050/2), 200);
 	
 	data.load("ranPoints.txt");
 //	Create Elements
@@ -62,7 +62,6 @@ void setup() {
 }
 ///////////////////////////////////////////////////////////
 void draw() {
-	println(frameRate);
 //	translate(-840+500/2,-525+500/2);
 	background(255);
 // 	ranShape.draw();
@@ -88,7 +87,7 @@ void draw() {
 
 		if(ran!=null)
 //			if((!elementN.test(ran) || PVector.dist(elementN.location, elementN.ranPoint) <= 5) && k>400) {
-			if(elementN.test(ran) && k>550) {
+			if(elementN.test(ran) && k>300) {
 				do {
 					ran.moved=1;
 					elementN.testElement(ran);
