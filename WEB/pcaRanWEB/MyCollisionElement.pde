@@ -1,4 +1,5 @@
 class MyCollisionElement extends CollisionElement{
+	PVector							velocity = new PVector(0,0,0);
 /////////////////////////////////////////////////////////
 	void collide(ElementChaos element, CollisionMap collisionMap, boolean mainCollision){};
 	void collide(ElementLorenz element, CollisionMap collisionMap, boolean mainCollision){};

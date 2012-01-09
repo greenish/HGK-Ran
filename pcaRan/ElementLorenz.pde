@@ -1,6 +1,5 @@
 class ElementLorenz extends MyCollisionElement {
 	ElementBlob						blob;
-
 	float 							defaultRadius=155;
 	int								variableSets=17;
 

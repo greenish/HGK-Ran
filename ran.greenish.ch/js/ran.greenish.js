@@ -10,11 +10,11 @@ var ran={
 				active:1
 			});
 			
-			$(".greenishSlides .navigation").hoverIntent(function(){
+			$(".greenishSlides .navigation, .greenishSlides .description").hoverIntent(function(){
 				$(this).greenishSlides("activate");
 				
 			}, function(){
-				$(".greenishSlides .content").greenishSlides("activate");
+				$(".greenishSlides .applet").greenishSlides("activate");
 			});
 			
 			

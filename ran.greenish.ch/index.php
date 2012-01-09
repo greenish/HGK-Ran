@@ -63,12 +63,10 @@
 				</div>
 			</div>
 		</li>
-		<li class="content">
-			<?php
-				if(file_exists($_GET["p"].".html")) include($_GET["p"].".html");
-				else include("pcaRanWEBjs.html");
-			?>
-		</li>
+		<?php
+			if(file_exists($_GET["p"].".html")) include($_GET["p"].".html");
+			else include("pcaRanWEBjs.html");
+		?>
 	</ul>
 	<!-- JavaScript at the bottom for fast mod project project1 loading -->
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
