@@ -1,4 +1,66 @@
-/*.navigation extends .mod*/
+/* .quickReference extends .bd*/
+
+.description .bd.quickReference {
+	padding:20px 0px 20px 16px;
+	overflow:hidden;
+	width:364px;
+	white-space:nowrap;
+}
+.quickReference p{
+	text-align:left;
+}
+.quickReference span {
+	display:inline-block;
+	width:70px;
+	margin-right:0px;
+	text-align:right;
+}
+.quickReference strong {
+	display:inline-block;
+	width:115px;
+	margin-right:2px;
+	text-align:right;
+}
+.quickReference span.tab {
+	display:inline-block;
+	width:188px;
+}
+.quickReference span.param {
+	display:inline-block;
+	width:80px;
+	text-align:left;
+}
+.quickReference h4 {
+	text-align:left;
+	padding-top:20px;
+	margin-top:20px;
+	margin-bottom:5px;
+	border-top:4px solid #000000;
+}
+.quickReference h4.reference {
+	text-align:center;
+}
+/*.applet extends .mod*/
+.applet .inner {
+	position:absolute;
+	left:0px;
+	height:100%;
+	overflow:auto;
+}
+
+.applet .bd {
+	position:relative;
+	display:inline-block;
+/*
+	padding:176px 10px 20px 20px;
+*/
+	width:auto;
+	padding:20px 60px;
+	text-align:left;
+	text-align:justify;
+}
+
+/*.description extends .mod*/
 .description .inner {
 	position:absolute;
 	left:0px;
@@ -13,20 +75,23 @@
 /*
 	padding:176px 10px 20px 20px;
 */
-	padding:20px 10px 20px 30px;
+	padding:20px 20px 20px 40px;
 	overflow:hidden;
-	width:340px;
+	width:320px;
 	text-align:left;
+	text-align:justify;
 }
 
-.description .bd p {
+.bd p {
 	font-size:85%;
-	line-height:130%;
+	line-height:140%;
 }
 
 .lead {
-	text-align:center;
+	text-align:left;
 	font-weight:bold;
+	margin-top:3px;
+	margin-bottom:-5px;
 }
 
 
@@ -96,5 +161,5 @@
 	color:#000000;
 	font-size:85%;
 	padding:5px 0px 10px 0px;
-	line-height:16px;
+	line-height:140%;
 }

@@ -1,0 +1,73 @@
+			<li class="applet">
+				<div class="inner">
+					<div class="bd">
+						<h2>About the Library</h2>
+						<p>pcaCollisionDetection is a library for Processing (<a href="http://www.processing.org" target="_blank">processing.org</a>) that allows you to easily handle a large amount of collision tests.</p>
+						<p>This library has been developed for the sketch "pcaRan" as part of a project at the HGK Basel, Switzerland. This library is my very first processing library and its been build more out of the interest to learn about building libraries and wrapping up my project to a nice form, than out of the need for a new library. I do not give any garantee of its usefulness or its functionality. If you can use it, feel free to do so and if you want to, tell me about it! I would love to see what you got out of it.</p>
+						
+						<h2>What it's doing</h2>
+						<p>Each instance of the CollisionDetection object holds a set of CollisionElements. The set can then be tested against any other CollisionElement.s
+						Every element that inherits from the class CollisionElement, can be added to the CollisionDetection set and will be mapped to a quadrant in a grid system. 
+						Elements that are tested against this set, only need to be tested against elements that lay inside one of the surrounding Quadrants of the tested element.
+						This reduces the amount of collision tests drastically. A collision occourse if the action radiuses of the elements are overlapping. If the collison test is positiv the function CollisionElement.collision() is called for each colliding element.</p>
+						
+						<h2>Installation</h2>
+						<p>- Download the latest version of the library from Github <a href="https://github.com/greenish/pcaCollisionDetection" target="_blank">here</a>.</p>
+						<p>- Unpack it to path/to/Sketchbook/libraries/.</p>
+						<p>- Start/Restart Processing. Done.</p>
+						<p>- Have a look at the examples and the <a href="pcaCollisionDetectionDocumentation" target="_blank">documentation</a> to see how it works.
+					</div>
+				</div>
+			</li>
+			<li class="mod description">
+				<div class="inner">
+					<div class="bd quickReference">
+						<h2>Quick Reference</h2>
+						
+						<h4><span>Class</span><strong>CollisionDetection</strong>(<span class="param">PApplet</span> this <br>
+							<span class="tab"></span>[<span class="param">, ArrayList</span> elements]);</h4>
+						<p> 
+							<span>void</span> <strong>add</strong>(<span class="param">CollisionElement</span> element);<br>
+							<span>void</span> <strong>addElement</strong>(<span class="param">CollisionElement</span> element);<br>
+							<span>ArrayList</span> <strong>getElements</strong>();<br>
+							<span>int</span> <strong>mapSize</strong>();<br>
+							<span>void</span> <strong>remapElements</strong>();<br>
+							<span>void</span> <strong>remove</strong>(<span class="param">CollisionElement</span> element);<br>
+							<span>void</span> <strong>removeElement</strong>(<span class="param">CollisionElement</span> element);<br>
+							<span>int</span> <strong>size</strong>();<br>
+							<span>void</span> <strong>testElement</strong>(<span class="param">CollisionElement</span> element);<br>
+							<span>void</span> <strong>testElement</strong>(<span class="param">CollisionElement</span> element<br>
+							<span class="tab"></span> [<span class="param">, boolean</span> removeElement]);<br>
+						</p>
+						<h4><span>abstract Class</span><strong>CollisionElement</strong>();</h4>
+						<p> 
+							<span>float</span> <strong>actionRadius;</strong><br>
+							<span>PVector</span> <strong>location;</strong>
+						</p>
+						<p>
+							<span>abstract void</span> <strong>collision</strong>(<span class="param">CollisionElement</span> element,<br>
+							<span class="tab"></span>&nbsp;&nbsp;<span class="param">CollisionMap</span> collisionMap,<br>
+							<span class="tab"></span>&nbsp;&nbsp;<span class="param">boolean</span> testedElement);<br>
+							<span>void</span> <strong>setActionRadius</strong>(<span class="param">float</span> actionRadius);<br>
+							<span>boolean</span> <strong>test</strong>(<span class="param">CollisionElement</span> element);<br>
+							<span>void</span> <strong>testElement</strong>(<span class="param">CollisionElement</span> element);<br>
+						</p>
+						<h4><span>Class</span><strong>CollisionMap</strong>();</h4>
+						<p> 
+							<span>int</span> <strong>columns;</strong><br>
+							<span>float</span> <strong>gridSize;</strong><br>
+							<span>int</span> <strong>rows;</strong>
+						</p>
+						<p>
+							<span>PVector</span> <strong>getQuadrant</strong>(<span class="param">PVector</span> location);<br>
+							<span>PVector</span> <strong>getQuadrant</strong>(<span class="param">int</span> x,<br>
+							<span class="tab"></span>&nbsp;&nbsp;<span class="param">int</span> y);<br>
+							<span>PVector</span> <strong>getQuadrantElements</strong>(<span class="param">PVector</span> coordinates);<br>
+							<span>PVector</span> <strong>getQuadrantElements</strong>(<span class="param">int</span> x,<br>
+							<span class="tab"></span>&nbsp;&nbsp;<span class="param">int</span> y);<br>
+							<span>int</span> <strong>size</strong>();
+						</p>
+						<h4 class="reference"><a href="pcaCollisionDetectionDocumentation" target="_blank">Full Reference: Javadoc Documentation</a></h4>
+					</div>
+				</div>
+			</li>

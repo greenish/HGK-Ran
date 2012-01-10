@@ -4,7 +4,8 @@ html{
 body {
 	margin:0px;
 	padding:0px;
-	min-width:550px;
+	min-height:550px;
+	min-width:600px;
 	font-family: arial;
 	color:#000000;
 }
@@ -22,8 +23,8 @@ a:hover {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #ccc; color:#fff; text-shadow: none; }
-::selection { background:#ccc; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
+::selection { background:#333; color:#fff; text-shadow: none; }
 
 
 

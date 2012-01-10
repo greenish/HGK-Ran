@@ -56,7 +56,7 @@
 						<li><a href="https://github.com/greenish/HGK-Ran/commits/master" target="_blank">HGK-Ran</a></li>
 					</ul>
 					<p class="info"> 
-						<a href="http://www.philippadrian.com">Philipp C. Adrian</a><br>
+						<a href="http://www.philippadrian.com" target="_blank">Philipp C. Adrian</a><br>
 						HGK Basel, Switzerland <br>
 						Fall 2011				
 					</p>
@@ -76,7 +76,7 @@
 	<script src="js/plugins/jquery.greenishSlides-v0.2-beta.js"></script>
 	
 	<?php
-		if(file_exists($_GET["p"].".html") && $_GET["p"] != "pcaRanWEBjs") echo"
+		if(file_exists($_GET["p"].".html") && $_GET["p"] != "pcaRanWEBjs" && $_GET["p"] != "pcaCollisionDetection") echo"
 		<script src='js/ran.greenish.js'></script>";
 	?>
 
