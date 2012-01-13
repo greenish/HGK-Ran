@@ -135,7 +135,7 @@ void draw() {
 
 		if(ran!=null)
 			if((!elementN.test(ran) || PVector.dist(elementN.location, elementN.ranPoint) <= 5) && k>400) {
-		//	if(elementN.test(ran) && k>400) {
+		//	if(elementN.test(ran) && k>1000) { // POSTER VISUAL
 				do {
 					ran.moved=1;
 					elementN.testElement(ran);
