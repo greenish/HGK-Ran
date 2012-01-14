@@ -224,7 +224,7 @@ void onFocusSession(String strFocus,PVector pos,float progress) {
 	println("onFocusSession: focus=" + strFocus + ",pos=" + pos + ",progress=" + progress);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-void keyPressed() {
+void keyReleased() {
 	switch(keyCode) {
 		case 68: //e
 			if(kinect) kinectListener.endSession();	// end sessions

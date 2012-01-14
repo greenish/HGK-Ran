@@ -200,7 +200,7 @@ void onFocusSession(String strFocus,PVector pos,float progress) {
 	println("onFocusSession: focus=" + strFocus + ",pos=" + pos + ",progress=" + progress);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-void keyPressed() {
+void keyReleased() {
 	switch(keyCode) {
 		case 10: //Enter
 			ran=ran!=null?

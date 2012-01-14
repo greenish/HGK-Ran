@@ -222,7 +222,7 @@ public void onFocusSession(String strFocus,PVector pos,float progress) {
 	println("onFocusSession: focus=" + strFocus + ",pos=" + pos + ",progress=" + progress);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-public void keyPressed() {
+public void keyReleased() {
 	switch(keyCode) {
 		case 10: //Enter
 			ran=ran!=null?
@@ -695,6 +695,7 @@ class ElementLorenz extends MyCollisionElement {
 	}
 }
 class MyCollisionElement extends CollisionElement{
+	PVector							velocity = new PVector(0,0,0);
 /////////////////////////////////////////////////////////
 	public void collide(ElementChaos element, CollisionMap collisionMap, boolean mainCollision){};
 	public void collide(ElementLorenz element, CollisionMap collisionMap, boolean mainCollision){};
