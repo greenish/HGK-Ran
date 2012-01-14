@@ -159,7 +159,7 @@ class ListPoint {
 				actualZ =thisPoint[2]*lorenzVisual.zoom;
 		
 		pushMatrix();
-			translate(lorenzVisual.position[0], lorenzVisual.position[1]);
+			translate(lorenzVisual.position[0], lorenzVisual.position[1]+10);
 			rotateX(radians(lorenzVisual.rotation[0]));
 			rotateY(radians(lorenzVisual.rotation[1]));
 			rotateZ(radians(lorenzVisual.rotation[2]));
@@ -175,7 +175,7 @@ class ListPoint {
 			popMatrix();
 		popMatrix();
 		
-		line(x-10+400,y-20+15, lorenzVisual.position[0], lorenzVisual.position[1]);
+		line(x-10+400,y-20+15, lorenzVisual.position[0], lorenzVisual.position[1]+10);
 		strokeWeight(1);
 		
 		rectMode(CORNER);
